@@ -581,6 +581,25 @@ p{margin:0 0 1em}
   box-shadow:var(--shadow-soft);
 }
 
+.partner-logo-block{
+  display:inline-flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+}
+.partner-site-link{
+  font-size:14px;
+  font-weight:600;
+  color:var(--cuivre-deep);
+  text-decoration:none;
+  border-bottom:1px solid rgba(168,122,79,.35);
+  transition:color .2s ease,border-color .2s ease;
+}
+.partner-site-link:hover{
+  color:var(--encre);
+  border-color:var(--encre);
+}
+
 /* ==========================================================================
    OFFER BANDS (notre-offre)
    ========================================================================== */
