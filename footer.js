@@ -8,23 +8,28 @@ footer.innerHTML = `
       <p>Accompagnement juridique, économique, formation et solutions opérationnelles pour les Comités Sociaux et Économiques.</p>
     </div>
     <div>
-      <h3>Navigation</h3>
-      <a href="notre-offre.html">Notre offre</a>
-      <a href="formations.html">Formations</a>
-      <a href="equipe-reseau.html">Équipe & réseau</a>
-      <a href="ressources.html">Ressources</a>
+      <h3>Notre offre</h3>
+      <a href="pole-avocats.html">CSE ZEN Avocats</a>
+      <a href="pole-comptabilite.html">CSE ZEN Comptabilité</a>
+      <a href="formations.html">CSE ZEN Formation</a>
+      <a href="solutions-digitales.html">CSE ZEN Solutions</a>
     </div>
     <div>
-      <h3>Contact</h3>
+      <h3>Cabinet</h3>
+      <a href="equipe-reseau.html">Équipe & réseau</a>
+      <a href="ressources.html">Ressources</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://www.linkedin.com/company/cselegal/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div>
+      <h3>Nous joindre</h3>
       <a href="tel:+33628781059">06 28 78 10 59</a>
       <a href="mailto:gvilleneuve@cse-zen.com">gvilleneuve@cse-zen.com</a>
       <span>11 avenue de l'Opéra<br>75001 Paris</span>
     </div>
-    <div>
-      <h3>Suivre CSE ZEN</h3>
-      <a href="https://www.linkedin.com/company/cselegal/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="contact.html">Demander un rendez-vous</a>
-    </div>
   </div>
-  <div class="container footer-bottom">© 2026 CSE ZEN — Tous droits réservés</div>
+  <div class="container footer-bottom">
+    <span>© 2026 CSE ZEN — Tous droits réservés</span>
+    <span>Partenaire de confiance des élus du CSE</span>
+  </div>
 </footer>`;
