@@ -352,6 +352,7 @@ p{margin:0 0 1em}
 .section-dark .card{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.10);box-shadow:none}
 .section-dark .card h3{color:#fff}
 .section-dark .card p{color:rgba(255,255,255,.7)}
+.section-dark .list li{color:rgba(255,255,255,.82)}
 
 .section-header{
   max-width:820px;
