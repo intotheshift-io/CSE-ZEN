@@ -868,6 +868,32 @@ p{margin:0 0 1em}
 .villa-band h2{color:#fff;font-size:clamp(28px,3.4vw,42px);margin:14px 0 18px}
 .villa-band p{color:rgba(255,255,255,.75);font-size:17px;line-height:1.6;margin:0}
 
+
+.villa-band-rich{
+  grid-template-columns:0.95fr 1.05fr;
+  align-items:center;
+}
+.villa-copy{position:relative;z-index:1}
+.villa-copy p + p{margin-top:14px}
+.villa-gallery{
+  position:relative;
+  z-index:1;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
+.villa-gallery img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+  border-radius:var(--radius-lg);
+  border:1px solid rgba(255,255,255,.16);
+  box-shadow:0 18px 44px rgba(0,0,0,.24);
+}
+.villa-gallery img:nth-child(2){
+  margin-top:34px;
+}
+
 /* ==========================================================================
    SOLUTIONS DIGITALES — Two-brand cards
    ========================================================================== */
@@ -1221,6 +1247,8 @@ p{margin:0 0 1em}
   .formation-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:1000px){
+  .villa-band-rich{grid-template-columns:1fr}
+  .villa-gallery img{height:260px}
   .offer-band{grid-template-columns:1fr;padding:28px}
   .offer-band::before{top:24px;bottom:24px}
   .team-grid.four{grid-template-columns:repeat(2,1fr)}
@@ -1254,6 +1282,9 @@ p{margin:0 0 1em}
   .footer-grid{grid-template-columns:1fr 1fr;gap:36px}
 }
 @media(max-width:600px){
+  .villa-gallery{grid-template-columns:1fr}
+  .villa-gallery img{height:220px}
+  .villa-gallery img:nth-child(2){margin-top:0}
   .poles-grid,.grid-3,.team-grid,.team-grid.four,.article-grid,.formation-grid,.footer-grid{grid-template-columns:1fr}
   .hero{padding:72px 0 56px}
   .nav-inner{height:72px}
