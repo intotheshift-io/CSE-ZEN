@@ -9,6 +9,29 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<style>
+  /* Ajustements locaux page Solutions digitales */
+  .brand-card.iwc .brand-mark img{border-radius:0}
+  .brand-card .brand-body .sub-title{
+    font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--cuivre-deep);margin:6px 0 -6px;
+  }
+  .brand-card .brand-body .anonymat-box{
+    background:rgba(11,127,131,.06);
+    border:1px solid rgba(11,127,131,.18);
+    border-radius:var(--radius);
+    padding:14px 18px;
+    font-size:14px;line-height:1.5;
+    color:var(--encre);
+    display:flex;align-items:flex-start;gap:12px;
+    margin-top:6px;
+  }
+  .brand-card .brand-body .anonymat-box::before{
+    content:'';flex:0 0 6px;width:6px;align-self:stretch;
+    background:var(--green);border-radius:3px;
+  }
+  .brand-card .brand-body .anonymat-box strong{color:var(--green);font-weight:700}
+</style>
 </head>
 <body data-active="Notre offre">
 <div id="site-header"></div>
@@ -47,15 +70,30 @@
           <h2>Diagnostics comportementaux Into The Shift</h2>
         </div>
         <div class="brand-body">
-          <p>Des diagnostics anonymes et situationnels pour aider les salariés, managers ou élus à réfléchir à leurs pratiques réelles face à des situations concrètes.</p>
+          <p>Plutôt que de demander aux salariés <em>ce qu'ils pensent</em>, Into The Shift les confronte à des <strong>situations professionnelles concrètes</strong> et mesure leurs réflexes réels. Le CSE obtient une lecture collective anonyme des pratiques, pas une enquête déclarative de plus.</p>
+
+          <div class="sub-title">Pour le CSE et la CSSCT</div>
           <ul class="list">
-            <li>Santé-sécurité au travail.</li>
-            <li>QVCT et conditions de travail.</li>
-            <li>RPS et signaux faibles.</li>
-            <li>Prévention du burn-out.</li>
-            <li>Restitution collective anonyme pour orienter les actions.</li>
+            <li>Objectiver les pratiques avant une consultation santé-sécurité ou QVCT.</li>
+            <li>Préparer une formation SSCT avec des données réelles du collectif.</li>
+            <li>Mesurer l'évolution d'un climat de prévention dans le temps (avant / après).</li>
+            <li>Nourrir un avis ou un débrief CSE sans exposer les réponses individuelles.</li>
+            <li>Repérer les signaux faibles avant qu'ils ne deviennent des dossiers.</li>
           </ul>
-          <div class="pill-list" style="margin-top:8px">
+
+          <div class="sub-title">Thématiques couvertes</div>
+          <ul class="list">
+            <li>Santé-sécurité, prévention des accidents et règles de l'art.</li>
+            <li>QVCT, conditions de travail et charge mentale.</li>
+            <li>RPS, harcèlement et signaux faibles.</li>
+            <li>Prévention du burn-out et qualité du management.</li>
+          </ul>
+
+          <div class="anonymat-box">
+            <span><strong>Anonymat garanti.</strong> Aucun compte répondant, aucun email, aucun login, aucun tracking d'IP. C'est ce qui permet aux salariés de répondre sincèrement sur des sujets sensibles.</span>
+          </div>
+
+          <div class="pill-list" style="margin-top:14px">
             <span class="pill">Santé-sécurité</span>
             <span class="pill">QVCT</span>
             <span class="pill">RPS</span>
