@@ -1638,53 +1638,97 @@ p{margin:0 0 1em}
 }
 
 /* ==========================================================================
-   SOLUTIONS DIGITALES — responsive brand cards
+   MOBILE — anti-coupure iPhone
    ========================================================================== */
-@media(max-width:600px){
-  .brand-card .brand-head{
-    padding:28px 24px 22px;
-  }
-
-  .brand-card .brand-mark{
-    align-items:flex-start;
-    gap:14px;
-    min-height:auto;
-  }
-
-  .brand-card .brand-mark .brand-kicker{
-    margin-left:0;
-    padding-left:14px;
-    font-size:10px;
-    letter-spacing:.10em;
-    line-height:1.35;
-    white-space:normal;
-    overflow-wrap:anywhere;
-    word-break:normal;
-  }
-
-  .brand-card.its .brand-mark img{
-    max-width:150px;
-    max-height:42px;
-  }
-
-  .brand-card .brand-head h2{
-    font-size:22px;
-  }
-
-  .brand-card .brand-body{
-    padding:24px;
-  }
+html,
+body{
+  max-width:100%;
+  overflow-x:hidden;
 }
 
-@media(max-width:390px){
+@media(max-width:600px){
+  .container{
+    width:calc(100% - 28px);
+  }
+
+  .hero{
+    padding:64px 0 50px;
+  }
+
+  .hero h1{
+    font-size:clamp(32px,10vw,40px);
+    line-height:1.08;
+    max-width:100%;
+    overflow-wrap:break-word;
+  }
+
+  .hero p.lede{
+    font-size:16px;
+    max-width:100%;
+  }
+
+  .hero .actions{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+  }
+
+  .hero .btn{
+    width:100%;
+    max-width:260px;
+    padding:13px 18px;
+    font-size:14px;
+  }
+
+  .hero-card.logo-card{
+    padding:22px;
+  }
+
+  .hero-card.logo-card img{
+    max-width:220px;
+  }
+
+  .brand-card .brand-head{
+    padding:26px 22px 22px;
+  }
+
   .brand-card .brand-mark{
     flex-direction:column;
+    align-items:flex-start;
     gap:12px;
+    min-height:auto;
+    margin-bottom:16px;
   }
 
   .brand-card .brand-mark .brand-kicker{
     border-left:0;
+    margin-left:0;
     padding-left:0;
+    font-size:10px;
+    letter-spacing:.08em;
+    line-height:1.35;
+    white-space:normal;
+    max-width:100%;
+  }
+
+  .brand-card.its .brand-mark img{
+    max-width:180px;
+    max-height:42px;
+  }
+
+  .brand-card.iwc .brand-mark img{
+    max-width:88px;
+    max-height:58px;
+  }
+
+  .brand-card .brand-head h2{
+    font-size:21px;
+    line-height:1.22;
+    overflow-wrap:break-word;
+  }
+
+  .brand-card .brand-body{
+    padding:22px;
   }
 }
 
