@@ -1425,3 +1425,129 @@ p{margin:0 0 1em}
   .expertise-grid,.value-grid{grid-template-columns:1fr}
   .expert-visual,.expert-visual img{min-height:260px}
 }
+
+/* ==========================================================================
+   CONTACT — refined cards
+   ========================================================================== */
+.contact-section .contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:48px;
+  align-items:stretch;
+}
+
+.contact-section .contact-card,
+.contact-section .contact-write-card{
+  min-height:340px;
+}
+
+.contact-section .contact-card{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  gap:28px;
+}
+
+.contact-logo-card{
+  position:relative;
+  z-index:1;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:190px;
+  padding:16px 18px;
+  background:#fff;
+  border:1px solid rgba(255,255,255,.72);
+  border-radius:18px;
+  box-shadow:0 18px 42px rgba(0,0,0,.18);
+  text-decoration:none;
+}
+
+.contact-logo-card img{
+  width:150px;
+  max-width:100%;
+  height:auto;
+  object-fit:contain;
+}
+
+.contact-address{
+  position:relative;
+  z-index:1;
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+  color:rgba(255,255,255,.82);
+  font-size:17px;
+  line-height:1.55;
+}
+
+.contact-linkedin{
+  position:relative;
+  z-index:1;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:44px;
+  height:44px;
+  border-radius:12px;
+  background:rgba(255,255,255,.96);
+  color:var(--encre);
+  text-decoration:none;
+  box-shadow:0 10px 24px rgba(0,0,0,.16);
+  transition:transform .25s ease,background .25s ease,color .25s ease;
+}
+
+.contact-linkedin:hover{
+  transform:translateY(-2px);
+  background:var(--cuivre);
+  color:#fff;
+}
+
+.contact-linkedin svg{
+  width:24px;
+  height:24px;
+  display:block;
+}
+
+.contact-write-card{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+}
+
+.contact-write-card h3{
+  font-size:clamp(26px,2.4vw,34px);
+  margin-bottom:18px;
+}
+
+.contact-write-card p{
+  font-size:17px;
+  max-width:560px;
+}
+
+.contact-write-card .actions{
+  margin-top:34px;
+}
+
+@media(max-width:900px){
+  .contact-section .contact-grid{
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+
+  .contact-section .contact-card,
+  .contact-section .contact-write-card{
+    min-height:auto;
+  }
+}
+
+@media(max-width:600px){
+  .contact-logo-card{
+    width:170px;
+  }
+
+  .contact-logo-card img{
+    width:132px;
+  }
+}
+
